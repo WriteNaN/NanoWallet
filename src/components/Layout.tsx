@@ -14,7 +14,7 @@ export default function Layout({ children }: { children: ReactNode }) {
     },
   });
   return (
-    <div>
+    <div className="bg-slate-900 h-screen">
       <div>{children}</div>
     </div>
   );
