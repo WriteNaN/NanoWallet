@@ -10,9 +10,7 @@ import "./styles/index.css";
 
 const updateSW = registerSW({
   onNeedRefresh() {
-    if (confirm("A new update is available, reload?")) {
-      updateSW(true);
-    }
+    updateSW(true);
   },
 });
 

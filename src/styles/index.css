@@ -3,15 +3,38 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Manrope";
-    src: url("/fonts/manrope.ttf");
+  font-family: "Manrope";
+  src: url("/fonts/manrope.ttf");
 }
 
-html, body {
-    background-color: #000;
-    color: #fff;
-    font-family: "Manrope", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    overflow: hidden;
+html,
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  overflow: hidden;
+}
+
+::selection {
+  background-color: #fff;
+  color: #000;
+}
+
+::-webkit-scrollbar-track {
+  background: 0 0;
+  position: absolute;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff80;
+  opacity: 0.3;
+  border-radius: 1.5px;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+  position: absolute;
+  left: 0;
 }
