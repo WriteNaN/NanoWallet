@@ -1,7 +1,9 @@
-export default function Wallet () {
+import Layout from "./components/Layout";
+
+export default function Wallet() {
   return (
-    <div>
-      <p>test.</p>
-    </div>
-  )
+    <Layout>
+      <p>hi</p>
+    </Layout>
+  );
 }

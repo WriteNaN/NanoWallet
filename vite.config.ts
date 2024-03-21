@@ -14,11 +14,14 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["**/*"],
       workbox: {
-        globPatterns: ["**/*"],
         clientsClaim: true,
         skipWaiting: true
+      },
+      injectRegister: 'script-defer',
+      devOptions: {
+        enabled: true,
+        type: 'module'
       }
     }),
   ],

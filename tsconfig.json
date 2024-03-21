@@ -9,6 +9,9 @@
     "paths": {
       "@/*": ["./src/*"]
     },
+    "types": [
+      "vite-plugin-pwa/client"
+    ],
 
     /* Bundler mode */
     "moduleResolution": "bundler",
